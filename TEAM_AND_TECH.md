@@ -14,12 +14,16 @@
   - Implemented the database query optimizations (identifying the `INNER JOIN` bottleneck and transitioning to `LEFT JOIN` in `PaperSearchEngine`).
   - Authored the core modules `assign_paper_keywords.py`, `paper_indexer.py`, and `paper_search_engine.py`.
 
-### 2. Lakshay (Lakshay Deol) — Systems Integration, Local Execution & Deployment Lead
-- **Responsibilities**:
-  - Engineered the standalone local runtime engine (`local_demo.py`) utilizing in-memory SQLite to decouple local development from external MySQL requirements.
-  - Implemented the command-line search interface accepting dynamic, multi-keyword user queries.
-  - Managed repository configuration, dependency management, package requirements, and GitHub orchestration.
-  - Verified cross-component integration between file readers, trie regex parsing, and scoring engines.
+### 2. Lakshay (Lakshay Deol) — Lead Frontend & Full-Stack Systems Engineer
+- **Main Project Responsibility (Interactive Frontend Architecture)**:
+  - Designed and developed the entire **Interactive Web Frontend** (`app.py`), transforming the command-line search scripts into a production-grade, responsive single-page web application.
+  - Implemented the client-side user experience with **Tailwind CSS**, **Lucide Icons**, and asynchronous JavaScript, featuring real-time multi-keyword tag filtering and one-click suggestion pills.
+  - Engineered the **Interactive Results Dashboard**, displaying dynamic score badges, citation metrics, categorized tags, author metadata, and expandable abstract previews.
+  - Built the live **Trie Text Scanner** interactive playground enabling users to paste arbitrary text or abstracts and benchmark $O(L)$ keyword detection directly in the browser.
+  - Designed the **NPMI Semantic Expansion Visualizer** and **Pipeline Architecture** view to provide mathematical transparency for the scoring function:
+    $$\text{Score} = \sum \max(\text{NPMI} \times \text{Score}) \times (\text{Citations} + 1)$$
+  - Integrated the full-stack REST API layer using **FastAPI** (`/api/search`, `/api/keywords`, `/api/stats`, `/api/match-text`).
+  - Engineered the standalone zero-config local SQLite runtime (`local_demo.py`) and managed repository release engineering, dependency packaging, and GitHub deployment.
 
 ### 3. Krishna Gupta — NLP & Semantic Embeddings Specialist
 - **Responsibilities**:

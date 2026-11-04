@@ -55,7 +55,7 @@ python -m unittest test/file_readers/test_paper_file_reader.py
 
 ## Team & Student Roles
 * **Kshitij**: Core Algorithm & Search Architecture Lead (3-Phase Pipeline, NPMI expansion, SQL Join optimizations).
-* **Lakshay (Lakshay Deol)**: Systems Integration, Local Execution & Deployment Lead (FastAPI Interactive Web Dashboard `app.py`, Local SQLite engine `local_demo.py`, CLI interface, repo orchestration).
+* **Lakshay (Lakshay Deol)**: Lead Frontend & Full-Stack Systems Engineer (Designed & built the entire Interactive Web Frontend `app.py`, client-side UI/UX dashboard, Trie abstract scanner, NPMI visualization, FastAPI REST API, and local SQLite engine `local_demo.py`).
 * **Krishna Gupta**: NLP & Semantic Embeddings Specialist (Sentence-BERT encoding, vector normalization, cosine similarity).
 * **Krishna Thakur**: Trie Data Structure & Regex Optimization Engineer (Prefix tree construction, regex union compiler).
 * **Laksh Gupta**: Database Architecture & Citation Ranking Engineer (MySQL schema design, citation-weighted ranking score, domain penalties).
